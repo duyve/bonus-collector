@@ -7,11 +7,13 @@ import os
 
 
 def notify(title, text, sound):
-    if sound is not None:
-        os.system(f"afplay {sound}" )
     os.system("""
               osascript -e 'display notification "{}" with title "{}"'
               """.format(text, title))
+
+    if sound is not None:
+        os.system(f"afplay {sound}" )
+
 
 
 
