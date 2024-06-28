@@ -20,7 +20,7 @@ pip install rbrapi    # RocketBotRoyale API client library
 Run the script with Python, providing necessary arguments:
 
 ```bash
-python main.py --email "your_email" --password "your_password" [--no-logging] [--auto-open-crates]
+python main.py --email "your_email" --password "your_password" [--no-logging] [--auto-open-crates 1|2]
 ```
 
 ### Command-line Arguments
@@ -28,7 +28,7 @@ python main.py --email "your_email" --password "your_password" [--no-logging] [-
 - `--email`: Email address for your RocketBotRoyale account.
 - `--password`: Password for your RocketBotRoyale account.
 - `--no-logging`: (Optional) Disable logging. By default, logging is enabled unless this flag is specified.
-- `--auto-open-crates`: (Optional) Automatically open crates if available and if coins are sufficient.
+- `--auto-open-crates`: (Optional) Automatically open crates if available and if coins are sufficient. Set to 1 for regular crates, 2 for premium crates.
 
 If you omit `--email` or `--password`, the script will prompt you to enter them interactively.
 
@@ -37,11 +37,11 @@ If you omit `--email` or `--password`, the script will prompt you to enter them 
 To run the script with logging enabled and auto-open crates:
 
 ```bash
-python main.py --email "your_email" --password "your_password" --auto-open-crates
+python main.py --email "your_email" --password "your_password" --auto-open-crates 1
 ```
 
 To run the script without logging and with auto-open crates:
 
 ```bash
-python main.py --email "your_email" --password "your_password" --no-logging --auto-open-crates
+python main.py --email "your_email" --password "your_password" --no-logging --auto-open-crates 1
 ```
