@@ -70,7 +70,6 @@ def main():
             logger.error(f"Unable to authenticate: {e}")
         except CollectTimedBonusError as e:
             logger.info(f"Bonus not available to claim yet: {e}")
-            notify("RocketBotRoyale", f"Bonus not available to claim yet: {e}", "crate.mp3")
         except LootBoxError as e:
             logger.error(f"Unable to open crates: {e}")
         except Exception as e:
